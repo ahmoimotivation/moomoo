@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2A2521">
+  <meta name="description" content="使用 Moi 的专属链接及优惠码 AM26 注册 moomoo，了解迎新奖励、60天资金条件及30天免费投资问答。">
+  <title>Moi × moomoo 专属开户福利｜优惠码 AM26</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;900&family=Noto+Serif+SC:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%232A2521'/%3E%3Cpath d='M13 42V20h15v6h-8v4h7v6h-7v6zm19 0V20h7v15h6V20h7v22H32z' fill='%23E8681C'/%3E%3C/svg%3E">
+  <style>
+    :root{
+      --orange:#E8681C;
+      --orange-deep:#C4530F;
+      --orange-soft:#FBE4D2;
+      --cream:#FBF4E9;
+      --cream-2:#F4E7D4;
+      --ink:#2A2521;
+      --ink-soft:#6A6157;
+      --line:#E6D8C1;
+      --white:#fff;
+      --green:#19724A;
+      --serif:"Noto Serif SC",Georgia,serif;
+      --sans:"Noto Sans SC",system-ui,-apple-system,"Segoe UI",sans-serif;
+      --shadow:0 24px 55px -34px rgba(42,37,33,.45);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.72;-webkit-font-smoothing:antialiased}
+    img{display:block;max-width:100%;height:auto}
+    a{color:inherit}
+    button{font:inherit}
+    .wrap{width:min(1080px,calc(100% - 40px));margin-inline:auto}
+    .section{padding:76px 0}
+    .serif{font-family:var(--serif)}
+    .eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--orange-deep);font-size:.78rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
+    .eyebrow::before{content:"";width:26px;height:2px;background:var(--orange)}
+    h1,h2,h3,p{margin-top:0}
+    h2{margin-bottom:16px;font:900 clamp(1.8rem,5vw,2.75rem)/1.25 var(--serif);letter-spacing:-.025em}
+    .lead{max-width:720px;margin-bottom:0;color:var(--ink-soft);font-size:clamp(1rem,2vw,1.13rem)}
+    .btn{display:inline-flex;min-height:58px;align-items:center;justify-content:center;gap:10px;padding:15px 28px;border:0;border-radius:999px;background:var(--orange);box-shadow:0 15px 30px -14px rgba(232,104,28,.72);color:#fff;font-weight:800;text-decoration:none;transition:.2s ease;cursor:pointer}
+    .btn:hover{background:var(--orange-deep);transform:translateY(-2px)}
+    .btn:focus-visible,.copy-btn:focus-visible,a:focus-visible{outline:3px solid rgba(232,104,28,.35);outline-offset:4px}
+    .btn-dark{background:var(--ink);box-shadow:none}
+    .btn-dark:hover{background:#151311}
+    .btn-whatsapp{background:#187C54;box-shadow:0 15px 30px -14px rgba(24,124,84,.58)}
+    .btn-whatsapp:hover{background:#116542}
+    .icon{width:20px;height:20px;flex:none}
+
+    .hero{position:relative;overflow:hidden;padding:52px 0 64px;background:radial-gradient(90% 80% at 100% 0%,rgba(232,104,28,.2),transparent 55%),radial-gradient(70% 70% at 0% 55%,rgba(232,104,28,.09),transparent 60%),var(--cream);border-bottom:1px solid var(--line)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:56px}
+    .brand{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:.04em}
+    .brand-mark{display:grid;width:38px;height:38px;place-items:center;border-radius:11px;background:var(--ink);color:var(--orange);font-weight:900;letter-spacing:-.08em}
+    .nav-code{padding:7px 13px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.65);color:var(--orange-deep);font-size:.82rem;font-weight:800}
+    .hero-grid{display:grid;grid-template-columns:minmax(0,1.16fr) minmax(340px,.84fr);gap:54px;align-items:center}
+    .hero-pill{display:inline-flex;align-items:center;gap:8px;padding:8px 15px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.72);color:var(--orange-deep);font-size:.82rem;font-weight:800}
+    .hero h1{max-width:690px;margin:22px 0 20px;font:900 clamp(2.45rem,6.5vw,4.65rem)/1.08 var(--serif);letter-spacing:-.045em}
+    .hero h1 em{color:var(--orange);font-style:normal}
+    .hero-copy{max-width:620px;margin-bottom:28px;color:var(--ink-soft);font-size:clamp(1.02rem,2vw,1.2rem)}
+    .hero-copy strong{color:var(--ink)}
+    .eligibility{display:flex;max-width:620px;align-items:flex-start;gap:10px;margin:-10px 0 24px;padding:13px 16px;border:1px solid #E8CFAE;border-radius:14px;background:rgba(255,255,255,.68);color:var(--ink);font-size:.9rem;font-weight:600}
+    .eligibility span{color:var(--orange-deep);font-weight:900}
+    .code-card{display:flex;max-width:520px;align-items:center;gap:16px;margin-bottom:24px;padding:13px 14px 13px 20px;border:1px solid var(--line);border-radius:17px;background:var(--white);box-shadow:var(--shadow)}
+    .code-label{flex:1;color:var(--ink-soft);font-size:.82rem;font-weight:700}
+    .code-label strong{display:block;color:var(--ink);font-size:1.55rem;letter-spacing:.12em;line-height:1.25}
+    .copy-btn{padding:10px 15px;border:1px solid var(--orange-soft);border-radius:11px;background:var(--orange-soft);color:var(--orange-deep);font-weight:800;cursor:pointer}
+    .hero-actions{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+    .hero-note{color:var(--ink-soft);font-size:.84rem}
+    .reward-frame{position:relative;padding:12px;border:1px solid rgba(255,255,255,.42);border-radius:26px;background:linear-gradient(145deg,var(--orange),var(--orange-deep));box-shadow:0 32px 64px -34px rgba(78,29,3,.8);transform:rotate(1.2deg)}
+    .reward-frame::before{content:"最高总值 RM1,600*";position:absolute;z-index:1;top:-18px;right:18px;padding:9px 14px;border-radius:999px;background:var(--ink);color:#fff;font-size:.78rem;font-weight:800;letter-spacing:.03em}
+    .reward-frame img{border-radius:17px;background:#fff}
+    .trust-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin-top:50px;overflow:hidden;border:1px solid var(--line);border-radius:18px;background:var(--line)}
+    .trust-item{display:flex;gap:12px;align-items:flex-start;padding:17px 18px;background:rgba(255,255,255,.72)}
+    .trust-item span{display:grid;width:27px;height:27px;flex:none;place-items:center;border-radius:50%;background:var(--orange-soft);color:var(--orange-deep);font-weight:900}
+    .trust-item p{margin:0;font-size:.88rem;line-height:1.5}
+    .trust-item strong{display:block;font-size:.92rem}
+
+    .rules{background:var(--ink);color:#f8efe5}
+    .rules .eyebrow{color:#ffb581}.rules .lead{color:#d8cdbf}
+    .rules-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:62px;align-items:start}
+    .rules-list{display:grid;gap:14px}
+    .rule{display:grid;grid-template-columns:48px 1fr;gap:15px;padding:20px;border:1px solid rgba(255,255,255,.11);border-radius:18px;background:rgba(255,255,255,.055)}
+    .rule-num{display:grid;width:44px;height:44px;place-items:center;border-radius:14px;background:var(--orange);color:#fff;font-weight:900}
+    .rule h3{margin:0 0 5px;font-size:1.03rem}.rule p{margin:0;color:#d8cdbf;font-size:.93rem}
+    .rule strong{color:#fff}
+    .sixty{display:flex;align-items:center;gap:20px;margin-top:28px;padding:22px;border-left:4px solid var(--orange);background:rgba(232,104,28,.1)}
+    .sixty strong{font:900 3.4rem/1 var(--serif);color:#ff9d61}.sixty p{margin:0;color:#ede2d5;font-size:.94rem}
+
+    .rewards-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:44px;align-items:start;margin-top:36px}
+    .benefit-card{padding:30px;border:1px solid var(--line);border-radius:22px;background:#fff;box-shadow:var(--shadow)}
+    .benefit-kicker{color:var(--orange-deep);font-size:.8rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+    .benefit-big{margin:8px 0 2px;font:900 clamp(2.2rem,6vw,4rem)/1 var(--serif);color:var(--orange)}
+    .benefit-card h3{margin-bottom:16px;font-size:1.12rem}
+    .check-list{display:grid;gap:12px;margin:22px 0 0;padding:0;list-style:none}
+    .check-list li{position:relative;padding-left:30px;color:var(--ink-soft);font-size:.95rem}
+    .check-list li::before{content:"✓";position:absolute;left:0;top:0;display:grid;width:21px;height:21px;place-items:center;border-radius:50%;background:var(--orange-soft);color:var(--orange-deep);font-size:.78rem;font-weight:900}
+    .image-card{overflow:hidden;border:1px solid var(--line);border-radius:22px;background:#fff;box-shadow:var(--shadow)}
+    .image-card img{width:100%}
+    .image-caption{padding:14px 18px;color:var(--ink-soft);font-size:.78rem}
+
+    .steps{background:var(--cream-2)}
+    .steps-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:46px;align-items:center;margin-top:38px}
+    .timeline{display:grid;gap:0}
+    .step{position:relative;display:grid;grid-template-columns:44px 1fr;gap:16px;padding-bottom:25px}
+    .step:not(:last-child)::before{content:"";position:absolute;left:21px;top:43px;bottom:2px;width:2px;background:var(--line)}
+    .step-num{position:relative;z-index:1;display:grid;width:44px;height:44px;place-items:center;border-radius:50%;background:var(--orange);color:white;font-weight:900}
+    .step h3{margin:2px 0 4px;font-size:1.03rem}.step p{margin:0;color:var(--ink-soft);font-size:.93rem}
+    .sop-frame{overflow:hidden;border:9px solid #fff;border-radius:22px;background:#090909;box-shadow:var(--shadow)}
+
+    .qa-grid{display:grid;grid-template-columns:.78fr 1.22fr;gap:46px;align-items:start;margin-top:38px}
+    .qa-offer{padding:30px;border-radius:22px;background:linear-gradient(145deg,var(--orange),var(--orange-deep));color:#fff;box-shadow:0 26px 52px -32px rgba(196,83,15,.9)}
+    .qa-offer .small{font-size:.82rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;opacity:.85}
+    .qa-offer .days{margin:8px 0 12px;font:900 clamp(3.2rem,8vw,5.4rem)/.95 var(--serif)}
+    .qa-offer h3{margin-bottom:12px;font-size:1.16rem}.qa-offer p{margin:0;opacity:.9;font-size:.94rem}
+    .boundary{margin-top:20px;padding-top:18px;border-top:1px solid rgba(255,255,255,.3);font-size:.84rem!important}
+    .questions{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .question{min-height:118px;padding:20px;border:1px solid var(--line);border-radius:17px;background:#fff;box-shadow:0 14px 30px -27px rgba(42,37,33,.5)}
+    .question::before{content:"Q";display:grid;width:29px;height:29px;margin-bottom:12px;place-items:center;border-radius:9px;background:var(--orange-soft);color:var(--orange-deep);font-weight:900}
+    .question p{margin:0;font-weight:600;line-height:1.55}
+
+    .final{padding:72px 0;background:linear-gradient(145deg,var(--orange),var(--orange-deep));color:#fff;text-align:center}
+    .final h2{max-width:760px;margin:0 auto 15px;color:#fff}
+    .final p{max-width:640px;margin:0 auto 26px;opacity:.9}
+    .final-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+    .final .btn{background:#fff;color:var(--orange-deep);box-shadow:0 14px 32px -18px rgba(0,0,0,.55)}
+    .final .btn:hover{background:var(--ink);color:#fff}
+    .final .btn-whatsapp{background:var(--ink);color:#fff}
+    .final .btn-whatsapp:hover{background:#151311}
+    .final-code{margin-top:15px;font-weight:800;letter-spacing:.08em}
+    footer{padding:38px 0 90px;border-top:1px solid var(--line);background:var(--cream-2);color:var(--ink-soft);font-size:.75rem;line-height:1.7}
+    footer p{margin-bottom:8px}
+    footer a{color:var(--orange-deep)}
+    .sticky-cta{position:fixed;z-index:10;right:14px;bottom:14px;left:14px;display:none;align-items:center;gap:8px;padding:8px;border:1px solid rgba(255,255,255,.16);border-radius:18px;background:rgba(42,37,33,.96);box-shadow:0 18px 40px rgba(0,0,0,.28);color:#fff;backdrop-filter:blur(10px)}
+    .sticky-cta .btn{min-height:47px;flex:1;padding:10px 13px;white-space:nowrap;font-size:.88rem;box-shadow:none}
+    .sticky-cta .btn-whatsapp{background:#187C54;color:#fff}
+    .toast{position:fixed;z-index:20;left:50%;bottom:92px;padding:11px 16px;border-radius:999px;background:var(--green);box-shadow:0 12px 30px rgba(0,0,0,.2);color:#fff;font-size:.86rem;font-weight:700;opacity:0;transform:translate(-50%,12px);pointer-events:none;transition:.2s ease}
+    .toast.show{opacity:1;transform:translate(-50%,0)}
+
+    @media (max-width:860px){
+      .section{padding:60px 0}.hero{padding-top:30px}.nav{margin-bottom:42px}
+      .hero-grid,.rules-grid,.rewards-grid,.steps-grid,.qa-grid{grid-template-columns:1fr;gap:36px}
+      .hero-copy{max-width:none}.reward-frame{max-width:560px;margin-inline:auto;transform:none}
+      .rules-grid>div:first-child{max-width:680px}.trust-row{grid-template-columns:1fr}.questions{grid-template-columns:1fr 1fr}
+    }
+    @media (max-width:560px){
+      body{font-size:16px}.wrap{width:min(100% - 28px,1080px)}.section{padding:52px 0}
+      .hero{padding-bottom:48px}.nav{margin-bottom:34px}.brand{font-size:.9rem}.nav-code{font-size:.75rem}
+      .hero h1{font-size:clamp(2.25rem,12vw,3.45rem)}.hero-actions .btn{width:100%}.hero-note{width:100%;text-align:center}
+      .code-card{gap:10px;padding-left:16px}.copy-btn{padding-inline:12px}.reward-frame{padding:8px;border-radius:19px}.reward-frame img{border-radius:12px}
+      .trust-row{margin-top:34px}.rule{grid-template-columns:40px 1fr;padding:17px}.rule-num{width:38px;height:38px}.sixty{align-items:flex-start}.sixty strong{font-size:2.8rem}
+      .questions{grid-template-columns:1fr}.benefit-card,.qa-offer{padding:24px}.sticky-cta{display:flex}
+    }
+    @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <nav class="nav" aria-label="页面导航">
+        <div class="brand"><span class="brand-mark" aria-hidden="true">FU</span><span>FU MONEY × moomoo</span></div>
+        <span class="nav-code">SPECIAL CODE · AM26</span>
+      </nav>
+
+      <div class="hero-grid">
+        <div>
+          <span class="hero-pill">🎁 Moi 专属开户福利</span>
+          <h1>开始投资美股，<br><em>把福利拿满。</em></h1>
+          <p class="hero-copy">通过我的专属链接注册 moomoo，正确填写优惠码 <strong>AM26</strong>，符合条件的用户可享<strong>最高总值 RM1,600*</strong>迎新奖励，并获得我提供的 <strong>30 天免费投资问答</strong>。</p>
+          <p class="eligibility"><span>✓</span>仅限全新用户，或已经拥有 moomoo 账户、但从未入金的用户。</p>
+
+          <div class="code-card" aria-label="专属优惠码">
+            <div class="code-label">你的 Special Code<strong>AM26</strong></div>
+            <button class="copy-btn" type="button" data-copy="AM26" aria-label="复制优惠码 AM26">复制代码</button>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn" href="https://start.moomoo.com/0IRNeW" target="_blank" rel="noopener noreferrer">
+              立即注册 moomoo
+              <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="btn btn-whatsapp" href="https://wa.me/60165005696?text=%E6%88%91%E8%A6%81%E6%B3%A8%E5%86%8C%20Moomoo%20%E4%BD%86%E6%98%AF%E6%9C%89%E9%97%AE%E9%A2%98%E8%A6%81%E9%97%AE%E4%BD%A0%E5%85%88" target="_blank" rel="noopener noreferrer" aria-label="通过 WhatsApp 询问 Moi">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.5 11.6a8.4 8.4 0 0 1-12.4 7.4L3.5 20.5l1.5-4.4A8.4 8.4 0 1 1 20.5 11.6Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.2 7.8c.2-.5.5-.5.8-.5h.6c.2 0 .4.1.5.4l.8 1.8c.1.3.1.5-.1.7l-.6.7c-.2.2-.1.4 0 .6.5.9 1.3 1.7 2.2 2.2.2.1.4.2.6 0l.8-1c.2-.2.4-.3.7-.2l1.8.8c.3.1.4.3.4.5 0 .3-.1 1.4-.7 1.9-.5.5-1.3.8-2.1.6-1.2-.3-3-.9-4.7-2.5-1.4-1.4-2.3-3.1-2.6-4.3-.2-.7 0-1.3.2-1.7Z" fill="currentColor"/></svg>
+              WhatsApp 先问我
+            </a>
+            <span class="hero-note">最低净入金 RM1,000 · 资金保留 60 天</span>
+          </div>
+        </div>
+
+        <figure class="reward-frame">
+          <img src="assets/referral-reward.jpeg" width="1280" height="1280" alt="moomoo 迎新奖励图：不同净入金等级可获现金券及 Apple 股票奖励，最高总值 RM1,600">
+        </figure>
+      </div>
+
+      <div class="trust-row" aria-label="重点条件">
+        <div class="trust-item"><span>1</span><p><strong>指定链接注册</strong>使用本页按钮开户</p></div>
+        <div class="trust-item"><span>2</span><p><strong>输入 AM26</strong>首次入金时填写</p></div>
+        <div class="trust-item"><span>3</span><p><strong>保留 60 天</strong>期间资金可用来交易</p></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section rules" id="conditions">
+      <div class="wrap rules-grid">
+        <div>
+          <span class="eyebrow">领取条件</span>
+          <h2>四件事必须做对，<br>奖励才不会错过。</h2>
+          <p class="lead">请在注册和第一次入金前看完。尤其是优惠码，必须在首次入金时输入。</p>
+          <div class="sixty"><strong>60</strong><p><b>天资金保留期</b><br>期间可以用资金买卖股票或 ETF；满 60 天后才提款。请同时维持符合活动要求的净资产／净入金水平。</p></div>
+        </div>
+
+        <div class="rules-list">
+          <article class="rule"><span class="rule-num">01</span><div><h3>使用 Moi 的专属链接</h3><p>必须通过 <strong>start.moomoo.com/0IRNeW</strong> 注册新账户。</p></div></article>
+          <article class="rule"><span class="rule-num">02</span><div><h3>首次入金填写 AM26</h3><p>在 moomoo 搜寻「Special Deposit」，进入后输入 <strong>AM26</strong> 再进行第一次入金。</p></div></article>
+          <article class="rule"><span class="rule-num">03</span><div><h3>最低净入金 RM1,000</h3><p>不同净入金等级对应不同奖励，实际发放以 moomoo 活动条款及账户资格为准。</p></div></article>
+          <article class="rule"><span class="rule-num">04</span><div><h3>资金保留满 60 天</h3><p>这 60 天内资金<strong>可以用来交易</strong>；满 60 天后可提款。交易涉及亏损风险，资产下跌也可能影响奖励资格。</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="rewards">
+      <div class="wrap">
+        <span class="eyebrow">迎新奖励</span>
+        <h2>开户福利，最高总值 RM1,600*</h2>
+        <p class="lead">奖励包括现金券及 Apple 股票奖励；你最终获得的项目与价值取决于净入金等级、活动资格及 moomoo 最终条款。</p>
+
+        <div class="rewards-grid">
+          <article class="benefit-card">
+            <div class="benefit-kicker">最低参与门槛</div>
+            <div class="benefit-big">RM1,000</div>
+            <h3>净入金起</h3>
+            <ul class="check-list">
+              <li>RM1,000：可开始符合基础奖励门槛</li>
+              <li>更高净入金等级可解锁更高价值奖励</li>
+              <li>奖励内容、股票价值与发放时间以官方为准</li>
+              <li>本活动并非保证回报，投资本金会随市场波动</li>
+            </ul>
+          </article>
+
+          <figure class="image-card">
+            <img src="assets/referral-reward.jpeg" width="1280" height="1280" loading="lazy" alt="moomoo Celebrate 2M Milestone 奖励详情图">
+            <figcaption class="image-caption">* 图片为活动参考。T&amp;C apply；实际奖励与资格以 moomoo 最新活动页面及账户显示为准。</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section steps" id="steps">
+      <div class="wrap">
+        <span class="eyebrow">入金步骤</span>
+        <h2>第一次入金前，先输入 AM26</h2>
+        <p class="lead">优惠码入口不在普通注册画面。开户完成后，请按下方步骤操作。</p>
+
+        <div class="steps-grid">
+          <div class="timeline">
+            <div class="step"><span class="step-num">1</span><div><h3>打开 moomoo 搜寻</h3><p>点击 App 内的搜寻图标。</p></div></div>
+            <div class="step"><span class="step-num">2</span><div><h3>输入 “Special Deposit”</h3><p>在搜寻结果中找到 Special Deposit，并点击 Go。</p></div></div>
+            <div class="step"><span class="step-num">3</span><div><h3>输入优惠码 AM26</h3><p>确认代码无误后，再进行你的<strong>第一次入金</strong>。</p></div></div>
+            <div class="step"><span class="step-num">4</span><div><h3>截图证明发给 Moi</h3><p>完成注册及入金后，把截图中的姓名、账号等个人资料遮住，再发给我确认。</p></div></div>
+          </div>
+
+          <figure class="sop-frame">
+            <img src="assets/deposit-sop.jpeg" width="922" height="543" loading="lazy" alt="如何在 moomoo 搜寻 Special Deposit 并输入优惠码 AM26 的操作步骤">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="qa">
+      <div class="wrap">
+        <span class="eyebrow">Moi 加送福利</span>
+        <h2>完成后，送你 30 天免费投资问答</h2>
+        <p class="lead">你可以直接把实际遇到的问题发给我，我会亲自回答，帮助你更顺利地开始使用 moomoo 和理解投资。</p>
+
+        <div class="qa-grid">
+          <article class="qa-offer">
+            <div class="small">Complimentary Q&amp;A</div>
+            <div class="days">30 天</div>
+            <h3>不限次数提问 · Moi 亲自回答</h3>
+            <p>从我确认你的注册与入金证明后开始计算。发送截图前，请先遮住身份证号码、账号、住址与余额以外的敏感资料。</p>
+            <p class="boundary"><strong>请注意：</strong>这是问题解答服务，不包含我的付费课程内容、系统化教学、作业批改、投资组合代管或保证收益。</p>
+          </article>
+
+          <div class="questions" aria-label="可以提问的例子">
+            <article class="question"><p>“我有 RM60,000，想投资 QQQ，可以怎样思考分批配置？”</p></article>
+            <article class="question"><p>“如何在 moomoo 搜寻、下单和买入 QQQ？”</p></article>
+            <article class="question"><p>“Market Order 和 Limit Order 有什么分别？”</p></article>
+            <article class="question"><p>“美股交易时间、换汇与平台费用要在哪里看？”</p></article>
+            <article class="question"><p>“买入 ETF 后，如何查看成本、盈亏和派息记录？”</p></article>
+            <article class="question"><p>“我应该怎样设定自己的风险范围和投资节奏？”</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final" aria-labelledby="final-title">
+      <div class="wrap">
+        <h2 id="final-title">准备好，就从正确的链接开始。</h2>
+        <p>先复制优惠码 AM26，再点击按钮注册。记得在第一次入金时输入代码。</p>
+        <div class="final-actions">
+          <a class="btn" href="https://start.moomoo.com/0IRNeW" target="_blank" rel="noopener noreferrer">使用 Moi 专属链接注册 →</a>
+          <a class="btn btn-whatsapp" href="https://wa.me/60165005696?text=%E6%88%91%E8%A6%81%E6%B3%A8%E5%86%8C%20Moomoo%20%E4%BD%86%E6%98%AF%E6%9C%89%E9%97%AE%E9%A2%98%E8%A6%81%E9%97%AE%E4%BD%A0%E5%85%88" target="_blank" rel="noopener noreferrer">WhatsApp 先问我</a>
+        </div>
+        <div class="final-code">SPECIAL CODE · AM26</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p><strong>风险与利益披露：</strong>投资涉及风险，证券价格可升可跌，你可能损失部分或全部本金。本页仅提供一般教育资讯，不构成个别投资建议、招揽、收益保证或代客理财。</p>
+      <p>本页含 Moi 的推荐链接；符合条件的开户或入金可能让推荐人获得转介利益。迎新奖励、资格、持有条件与发放安排以 moomoo 最新条款和账户内显示为准。</p>
+      <p>Moomoo Securities Malaysia Sdn. Bhd. 是受马来西亚证券监督委员会（SC）监管的资本市场服务执照持有人（Licence No. eCMSL/A0397/2024）。官方资料：<a href="https://www.moomoo.com/my/" target="_blank" rel="noopener noreferrer">moomoo Malaysia</a>。</p>
+      <p>本页由 Moi 独立提供，并非 moomoo 或 Apple 官方网站。Apple 及其标志是 Apple Inc. 的商标。</p>
+    </div>
+  </footer>
+
+  <div class="sticky-cta" aria-label="快速联系或注册">
+    <a class="btn btn-whatsapp" href="https://wa.me/60165005696?text=%E6%88%91%E8%A6%81%E6%B3%A8%E5%86%8C%20Moomoo%20%E4%BD%86%E6%98%AF%E6%9C%89%E9%97%AE%E9%A2%98%E8%A6%81%E9%97%AE%E4%BD%A0%E5%85%88" target="_blank" rel="noopener noreferrer">WhatsApp 先问</a>
+    <a class="btn" href="https://start.moomoo.com/0IRNeW" target="_blank" rel="noopener noreferrer">立即注册</a>
+  </div>
+  <div class="toast" role="status" aria-live="polite">已复制优惠码 AM26</div>
+
+  <script>
+    (() => {
+      const button = document.querySelector('[data-copy]');
+      const toast = document.querySelector('.toast');
+      if (!button || !toast) return;
+      let timer;
+
+      button.addEventListener('click', async () => {
+        const value = button.dataset.copy;
+        try {
+          await navigator.clipboard.writeText(value);
+        } catch (_) {
+          const input = document.createElement('input');
+          input.value = value;
+          input.setAttribute('readonly', '');
+          input.style.position = 'fixed';
+          input.style.opacity = '0';
+          document.body.appendChild(input);
+          input.select();
+          document.execCommand('copy');
+          input.remove();
+        }
+        button.textContent = '已复制';
+        toast.classList.add('show');
+        clearTimeout(timer);
+        timer = setTimeout(() => {
+          button.textContent = '复制代码';
+          toast.classList.remove('show');
+        }, 1800);
+      });
+    })();
+  </script>
+</body>
+</html>
