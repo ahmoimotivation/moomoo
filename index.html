@@ -109,6 +109,28 @@
     .step h3{margin:2px 0 4px;font-size:1.03rem}.step p{margin:0;color:var(--ink-soft);font-size:.93rem}
     .sop-frame{overflow:hidden;border:9px solid #fff;border-radius:22px;background:#090909;box-shadow:var(--shadow)}
 
+    .tutorial-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+    .tutorial-links a{padding:8px 14px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.7);color:var(--orange-deep);font-size:.88rem;font-weight:700;text-decoration:none}
+    .tutorial-links a:hover{background:var(--orange-soft)}
+    .tutorial-grid{display:grid;grid-template-columns:1fr;max-width:960px;gap:24px;margin:32px auto 0}
+    .tutorial-card{min-width:0;overflow:hidden;border:1px solid var(--line);border-radius:22px;background:var(--white);box-shadow:var(--shadow);scroll-margin-top:24px}
+    .tutorial-copy{padding:22px 24px}
+    .tutorial-copy h3{margin:6px 0 8px;font-size:1.2rem}
+    .tutorial-copy p{margin:0;color:var(--ink-soft);font-size:.92rem}
+    .tutorial-label{color:var(--orange-deep);font-size:.78rem;font-weight:800;letter-spacing:.06em}
+    .tutorial-player{display:grid;place-items:center;background:#151311}
+    .tutorial-player video{display:block;width:100%;height:auto;object-fit:contain}
+    .tutorial-foot{padding:14px 24px;color:var(--ink-soft);font-size:.8rem}
+    .tutorial-foot a{color:var(--orange-deep);font-weight:700}
+    .tutorial-note{margin:24px 0 0;color:var(--ink-soft);font-size:.84rem}
+    @media(max-width:700px){
+      .tutorial-grid{grid-template-columns:1fr}
+      .tutorial-player{height:auto}
+      .tutorial-player video{height:auto;max-height:72vh}
+      .tutorial-copy{padding:20px}
+      .tutorial-foot{padding:14px 20px}
+    }
+
     .qa-grid{display:grid;grid-template-columns:.78fr 1.22fr;gap:46px;align-items:start;margin-top:38px}
     .qa-offer{padding:30px;border-radius:22px;background:linear-gradient(145deg,var(--orange),var(--orange-deep));color:#fff;box-shadow:0 26px 52px -32px rgba(196,83,15,.9)}
     .qa-offer .small{font-size:.82rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;opacity:.85}
@@ -186,6 +208,9 @@
             </a>
             <span class="hero-note">最低净入金 RM1,000 · 资金保留 60 天</span>
           </div>
+          <div class="tutorial-links" aria-label="观看视频教学">
+            <a href="#register-video">▶ 注册教学</a>
+          </div>
         </div>
 
         <figure class="reward-frame">
@@ -202,6 +227,31 @@
   </header>
 
   <main>
+    <section class="section" id="tutorials" aria-labelledby="tutorials-title">
+      <div class="wrap">
+        <span class="eyebrow">视频教学</span>
+        <h2 id="tutorials-title">跟着视频，一步一步操作</h2>
+        <p class="lead">跟着注册教学了解操作步骤。点击播放即可观看，也可以切换全屏。</p>
+        <div class="tutorial-grid">
+          <article class="tutorial-card" id="register-video">
+            <div class="tutorial-copy">
+              <span class="tutorial-label">01 · 注册教学</span>
+              <h3>如何注册 Moomoo</h3>
+              <p>跟着画面了解注册链接、开户及优惠码操作。</p>
+            </div>
+            <div class="tutorial-player">
+              <video controls playsinline preload="none" poster="assets/videos/register-poster.jpg" aria-label="如何注册 Moomoo 视频教学">
+                <source src="assets/videos/register-moomoo.mp4" type="video/mp4">
+                你的浏览器暂不支持视频播放，请使用下方链接打开视频。
+              </video>
+            </div>
+            <div class="tutorial-foot"><a href="assets/videos/register-moomoo.mp4" target="_blank" rel="noopener noreferrer">单独打开视频 ↗</a></div>
+          </article>
+        </div>
+        <p class="tutorial-note">视频为录制时的操作示范。App 界面、活动奖励、资格与领取条件可能调整，请以 moomoo 最新官方条款及账户内显示为准。投资涉及风险，迎新奖励不代表投资回报。</p>
+      </div>
+    </section>
+
     <section class="section rules" id="conditions">
       <div class="wrap rules-grid">
         <div>
