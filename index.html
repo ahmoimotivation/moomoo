@@ -88,7 +88,7 @@
     .sixty{display:flex;align-items:center;gap:20px;margin-top:28px;padding:22px;border-left:4px solid var(--orange);background:rgba(232,104,28,.1)}
     .sixty strong{font:900 3.4rem/1 var(--serif);color:#ff9d61}.sixty p{margin:0;color:#ede2d5;font-size:.94rem}
 
-    .rewards-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:44px;align-items:center;margin-top:36px}
+    .rewards-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:44px;align-items:start;margin-top:36px}
     .benefit-card{padding:30px;border:1px solid var(--line);border-radius:22px;background:#fff;box-shadow:var(--shadow)}
     .benefit-kicker{color:var(--orange-deep);font-size:.8rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
     .benefit-big{margin:8px 0 2px;font:900 clamp(2.2rem,6vw,4rem)/1 var(--serif);color:var(--orange)}
@@ -122,11 +122,8 @@
     .tutorial-player video{display:block;width:100%;height:auto;object-fit:contain}
     .tutorial-foot{padding:14px 24px;color:var(--ink-soft);font-size:.8rem}
     .tutorial-foot a{color:var(--orange-deep);font-weight:700}
-    .reward-tutorial{width:100%;max-width:390px;margin-inline:auto}
+    .reward-tutorial{width:100%;max-width:390px;margin:32px auto 0}
     .reward-tutorial .tutorial-player video{max-height:560px}
-    .reward-chart{margin-top:22px;padding:18px 22px;border:1px solid var(--line);border-radius:17px;background:#fff}
-    .reward-chart summary{cursor:pointer;color:var(--orange-deep);font-weight:700}
-    .reward-chart .image-card{max-width:640px;margin:20px auto 0;box-shadow:none}
     .tutorial-note{margin:24px 0 0;color:var(--ink-soft);font-size:.84rem}
     @media(max-width:700px){
       .tutorial-grid{grid-template-columns:1fr}
@@ -270,6 +267,11 @@
             </ul>
           </article>
 
+          <figure class="image-card">
+            <img src="assets/referral-reward.jpeg" width="1280" height="1280" loading="lazy" alt="moomoo Celebrate 2M Milestone 奖励详情图">
+            <figcaption class="image-caption">* 图片为活动参考。T&amp;C apply；实际奖励与资格以 moomoo 最新活动页面及账户显示为准。</figcaption>
+          </figure>
+        </div>
           <article class="tutorial-card reward-tutorial" id="rewards-video">
             <div class="tutorial-copy">
               <span class="tutorial-label">奖励讲解 · 约 4 分钟</span>
@@ -284,15 +286,8 @@
             </div>
             <div class="tutorial-foot"><a href="assets/videos/moomoo-rewards.mp4" target="_blank" rel="noopener noreferrer">单独打开视频 ↗</a></div>
           </article>
-        </div>
         <p class="tutorial-note">视频录制于 2026 年 11 月。奖励并非无条件保证，须符合活动资格、净入金及资金保留等要求；具体奖励及发放安排以 moomoo 最新官方条款与账户显示为准。投资涉及风险，奖励不代表投资回报。</p>
-        <details class="reward-chart">
-          <summary>查看奖励详情图</summary>
-          <figure class="image-card">
-            <img src="assets/referral-reward.jpeg" width="1280" height="1280" loading="lazy" alt="moomoo Celebrate 2M Milestone 奖励详情图">
-            <figcaption class="image-caption">* 图片为活动参考。T&amp;C apply；实际奖励与资格以 moomoo 最新活动页面及账户显示为准。</figcaption>
-          </figure>
-        </details>
+
       </div>
     </section>
 
